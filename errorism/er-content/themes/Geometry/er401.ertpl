@@ -1,0 +1,114 @@
+
+<html>
+	<head>
+		<title>Error {{eroCode}}! | {{erSiteName}} | Errorism</title>
+		<link rel="icon" type="image/x-icon" href="er-content/themes/Geometry/img/favicon.ico" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="er-content/themes/Geometry/css/core.css">
+		<link rel="stylesheet" href="er-content/themes/Geometry/css/button.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="er-content/themes/Geometry/js/button.min.js"></script>
+		<style type="text/css">
+		body{
+			font-family: 'Capriola', sans-serif;
+			background:url('er-content/themes/Geometry/img/geometry(errorism).png') repeat;
+		}
+		a {
+			color: #FF6347;
+			text-decoration: none; 
+		}
+		.links {
+			border: solid 1px;
+		}
+		.links a:hover {
+			opacitymask: 70%;
+		}
+		@font-face {
+			font-family: errorism-paper;
+			src: url('er-content/themes/Geometry/fonts/funky_paper(errorism).ttf');
+			}
+		.errorism {
+			font-family: 'errorism-paper';
+			}
+		.wrap{
+			margin:0 auto;
+			width:1000px;
+		}
+		.logo h1{
+			font-size:240px;
+			color:#FF7A00;
+			text-align:center;
+			margin-bottom:1px;
+			text-shadow:4px 4px 1px white;
+		}	
+		.logo p{
+			color:#B1A18D;
+			font-size:20px;
+			margin-top:1px;
+			text-align:center;
+		}	
+		.logo p span{
+			color:lightgreen;
+		}	
+		.sub a{
+			color:#ff7a00;
+			text-decoration:none;
+			padding:5px;
+			font-size:13px;
+			font-family: arial, serif;
+			font-weight:bold;
+		}	
+		.footer{
+			color:white;
+			position:absolute;
+			right:10px;
+			bottom:10px;
+		}	
+		.footer a{
+			color:#ff7a00;
+		}
+		.footerer{
+			color:white;
+			position:absolute;
+			left:10px;
+			bottom:10px;
+		}	
+		.footerer a{
+			color:#ff7a00;
+		}	
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+		<span style="float:left;position:absolute;top:25px;"><a href="{{erHomeURI}}"><img src="er-content/themes/Geometry/img/logo.png" alt="{{erSiteName}}" /></a></span><span style="float:right;position:absolute;right:25px;top:30px;"><font color="#FF6347"><a href="mailto:{{erUserEmail}}" class="links">Support: {{erUserEmail}}</a> | <a href="{{erHomeURI}}" class="links">Home</a> | <a href="http://labs.shashwat.cf/thebuggenie/errorism/" class="links" target="_blank">Errorsim</a> | <a href="http://shashwat.cf/" class="links" target="_blank">Shashwat</a></font></span>
+		<br>
+			<center style="position:absolute;top:150px;left:50px;right:50px;">
+			<p><font color="#1E90FF">{{eroMsg}}</font></p>
+			</center>
+			<div class="logo">
+			
+	    <h1 class="errorism">{{eroCode}}</h1>
+				<p> OOOPPSSS!! - {{eroHead}}!</p>
+						<div class="sub">
+				   
+	      <p><a href="javascript: history.go(-1)" id="btnLink"><font face="cursive, Orator Std">Back to Previous Page</font></a></p>
+				</div>
+			</div>
+		</div>
+
+		
+			<div class="footer">
+		 <font color="#FF6347">&copy; Copyright <a href="{{erHomeURI}}">{{erSiteName}}</a> - {{erYearFunc}}</font>
+		</div>
+		<div class="footerer">
+		<font color="#FF6347">Powered By: <a href="http://labs.shashwat.cf/thebuggenie/errorism/" target="_blank">Errorism PHP Software</a></font>
+		</div>
+		<script type="text/javascript">
+		$(function () {
+			$("#btnLink").zinoButton();
+		});
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+
+# Errorism .HT File
+# Core file to automate the error management
+
+# Not Found Error 
+ErrorDocument 404 /error.php?code=404
+
+# Bad Request Error
+ErrorDocument 401 /error.php?code=401
+
+# Internal Server Error
+ErrorDocument 500 /error.php?code=500
+
+# Forbidden Access Error
+ErrorDocument 403 /error.php?code=403
+
+# End of Errorism .HT Configuration
